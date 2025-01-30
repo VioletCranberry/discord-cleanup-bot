@@ -1,0 +1,11 @@
+---
+services:
+  discord-cleanup-bot:
+    image: ghcr.io/violetcranberry/discord-cleanup-bot:latest
+    container_name: "discord-cleanup-bot"
+    environment:
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+    restart: unless-stopped
+    # command:
+    #   - "--token=${DISCORD_BOT_TOKEN}"
+    #   - "--debug"

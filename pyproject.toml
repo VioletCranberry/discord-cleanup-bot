@@ -1,0 +1,23 @@
+[tool.poetry]
+package-mode = false
+
+name = "discord-cleanup-bot"
+description = "Simple Discord bot that cleans up your messages."
+authors = ["VioletCranberry"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+discord = "^2.3.2"
+dateparser = "^1.2.0"
+audioop-lts = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
