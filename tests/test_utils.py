@@ -35,8 +35,8 @@ class TestGetBotToken(unittest.TestCase):
 
 class TestParseTimeInput(unittest.TestCase):
     def test_parse_valid_time_input(self):
-        time_input = "1st of January 2023 at 10:00"
-        expected_datetime = datetime(2023, 1, 1, 10, 0, 0)
+        time_input = "1st of January 2024 at 10:00"
+        expected_datetime = datetime(2024, 1, 1, 10, 0, 0)
         parsed_date = parse_time_input(time_input)
         self.assertEqual(parsed_date, expected_datetime)
 
