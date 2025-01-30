@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 jobs:
-  black:
+  unittest:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
